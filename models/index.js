@@ -4,6 +4,7 @@ const Category = require("./Category");
 const Tag = require("./Tag");
 const ProductTag = require("./ProductTag");
 
+// association methods on sequelize models to create relationships
 // Products belongsTo Category
 Product.belongsTo(Category, {
   foreignKey: "product_id",
